@@ -24,8 +24,6 @@ export class TasksRepository extends Repository<Task> {
       )
     }
 
-    console.log(query.getQueryAndParameters());
-
     const tasks = query.getMany();
     return tasks;
   }
